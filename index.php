@@ -47,7 +47,7 @@
                                 <img src="img/lightbulbWhite.svg">
                             </div>
                             <div class="step-text">This website runs on Local IP:
-								<span class="dynamic"> <?php $ip = gethostbyname($hostname); echo "$ip"?> </span>
+								<span class="dynamic"> <?php $ip = $_SERVER['SERVER_ADDR']; echo "$ip"?> </span>
 								and Host Name:
 								<span class="dynamic"> <?php $hostname = exec("hostname");echo "$hostname"?> 
 								</span>
